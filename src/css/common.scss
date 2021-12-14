@@ -1,0 +1,16 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+html,
+body,
+#app {
+  height: 100%;
+}
+.w-100 {
+  width: 100%;
+}
