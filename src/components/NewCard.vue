@@ -28,7 +28,7 @@ export default {
       form: {
         name: "",
       },
-      formLabelWidth: "120px",
+      formLabelWidth: "95px",
       formError: false,
     };
   },
@@ -37,7 +37,7 @@ export default {
       this.dialogFormVisible = true;
     },
     handleFormSubmit() {
-      const format = /^[a-z][a-z\s]*$/;
+      const format = /^[a-zA-Z][a-zA-Z\s]*$/;
       if (!format.test(this.form.name) || !this.form.name) {
         this.formError = true;
       } else {
@@ -70,5 +70,11 @@ export default {
 .form-error-message {
   color: #f44336;
   font-weight: 500;
+}
+@media (max-width: 991.98px) {
+  .new-card {
+    color: #23cefd;
+    background: transparent;
+  }
 }
 </style>

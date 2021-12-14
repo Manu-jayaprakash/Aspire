@@ -9,7 +9,7 @@
       </div>
       <el-card class="body-card">
         <el-row class="w-100">
-          <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12">
+          <el-col :xs="24" :sm="24" :md="24" :lg="12" :xl="12" class="col-dark">
             <Carousel />
             <CardControls />
           </el-col>
@@ -63,6 +63,9 @@ export default {
       align-items: center;
     }
   }
+  .col-dark {
+    position: relative;
+  }
 }
 .body-card .el-card__body {
   padding: 60px 40px;
@@ -83,6 +86,18 @@ export default {
   .home-page__container {
     .el-dialog {
       width: 80%;
+    }
+    .col-dark {
+      background: #0c365a;
+    }
+    &-main-head {
+      padding: 30px 24px 24px 24px;
+      background: #0c365a;
+      color: #fff;
+    }
+    .body-card {
+      border: none;
+      border-radius: unset;
     }
   }
 }

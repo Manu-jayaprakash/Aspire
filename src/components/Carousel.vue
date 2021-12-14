@@ -1,4 +1,8 @@
 <template>
+  <span class="debit-card__show-number">
+    <img src="@/assets/eye.svg" alt="eye" />
+    <span>Show card number</span>
+  </span>
   <Splide
     class="card-carousel"
     :options="{ arrows: false, padding: { right: 20, left: 10 }, gap: 0 }"
@@ -33,11 +37,11 @@ export default {
     bottom: -28px;
     &__page {
       background: #01d167;
-      opacity: 20%;
+      opacity: 0.3;
       border-radius: 8px;
       margin-right: 8px;
       &.is-active {
-        opacity: 100%;
+        opacity: 1;
         background: #01d167;
         width: 16px;
       }
