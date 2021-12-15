@@ -51,31 +51,6 @@ export default {
   },
 };
 </script>
-<style scoped>
-nav {
-  background: #0c365a;
-  /* width: 340px; */
-  height: 100%;
-  /* position: fixed; */
-  padding: 48px;
-  color: #ffffff;
-}
-.nav-header__text {
-  font-size: 15px;
-  line-height: 20px;
-  opacity: 0.3;
-  margin-top: 19px;
-}
-.nav-items {
-  display: flex;
-  flex-direction: column;
-  row-gap: 60px;
-  margin-top: 81px;
-}
-.nav-items__link {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  cursor: pointer;
-}
+<style scoped lang="scss">
+@import "../css/components/navigator.scss";
 </style>

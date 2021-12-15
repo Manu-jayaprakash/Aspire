@@ -1,0 +1,52 @@
+@import "../css/variables.scss";
+.card-page__container {
+  height: 100%;
+  &-main {
+    &.el-main {
+      padding: 60px;
+      overflow-y: overlay;
+    }
+    &-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .col-dark {
+    position: relative;
+  }
+}
+.body-card .el-card__body {
+  padding: 60px 40px;
+}
+@media (max-width: 991.98px) {
+  .el-aside {
+    display: none;
+  }
+  .card-page__container-main.el-main {
+    padding: 1px;
+  }
+  .body-card .el-card__body {
+    padding: 0px;
+  }
+  .debit-card {
+    width: 97%;
+  }
+  .card-page__container {
+    .el-dialog {
+      width: 80%;
+    }
+    .col-dark {
+      background: $dark-theme;
+    }
+    &-main-head {
+      padding: 30px 24px 0px 24px;
+      background: $dark-theme;
+      color: #fff;
+    }
+    .body-card {
+      border: none;
+      border-radius: unset;
+    }
+  }
+}

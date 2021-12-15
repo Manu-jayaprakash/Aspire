@@ -108,32 +108,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.card-controls {
-  background: #edf3ff;
-  border-radius: 16px;
-  max-width: 414px;
-  margin-top: 56px;
-  padding: 20px 28px;
-  &__options {
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
-  }
-  &__option {
-    cursor: pointer;
-    font-size: 13px;
-    line-height: 14px;
-    color: #0c365a;
-    max-width: 60px;
-    &-text {
-      margin-top: 7px;
-    }
-  }
-}
-@media (max-width: 991.98px) {
-  .card-controls {
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-}
+@import "../css/components/card-controls.scss";
 </style>

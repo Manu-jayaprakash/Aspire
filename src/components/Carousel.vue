@@ -5,7 +5,7 @@
   </span>
   <Splide
     class="card-carousel"
-    :options="{ arrows: false, padding: { right: 20, left: 10 }, gap: 0 }"
+    :options="splideOptions"
     @splide:pagination:updated="onSlideChange"
   >
     <SplideSlide v-for="card in cards" :key="card.id">
@@ -18,6 +18,16 @@ import DebitCard from "./DebitCard";
 import { mapGetters } from "vuex";
 export default {
   components: { DebitCard },
+  data() {
+    return {
+      splideOptions: {
+        arrows: false,
+        padding: { right: 0, left: 0 },
+        gap: 0,
+        breakpoints: { 991.98: { padding: { right: 20, left: 10 } } },
+      },
+    };
+  },
   computed: {
     ...mapGetters("cards", { cards: "getCardData" }),
   },
@@ -32,25 +42,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.card-carousel {
-  .splide__pagination {
-    bottom: -28px;
-    &__page {
-      background: #01d167;
-      opacity: 0.3;
-      border-radius: 8px;
-      margin-right: 8px;
-      &.is-active {
-        opacity: 1;
-        background: #01d167;
-        width: 16px;
-      }
-    }
-  }
-  .splide__slide.is-active {
-    .debit-card {
-      background: #01d167;
-    }
-  }
-}
+@import "../css/components/carousel.scss";
 </style>

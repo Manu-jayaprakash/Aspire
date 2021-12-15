@@ -1,0 +1,32 @@
+@import "../variables.scss";
+.card-tabs {
+  .el-tabs__item {
+    color: #222222;
+    opacity: 0.3;
+    font-size: 14px;
+    line-height: 50px;
+    font-weight: 500;
+    &.is-active {
+      opacity: 1;
+      color: unset;
+    }
+  }
+  .el-tabs__nav-wrap::after {
+    content: none;
+  }
+  .el-tabs__active-bar {
+    background-color: #23cefd;
+  }
+}
+@media (max-width: 991.98px) {
+  .card-tabs {
+    background: $dark-theme;
+    .el-tabs__item {
+      color: #fff !important;
+    }
+    .el-tabs__nav-wrap {
+      margin-top: -1px;
+      padding-left: 24px;
+    }
+  }
+}

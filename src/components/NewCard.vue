@@ -55,26 +55,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.new-card {
-  background: #325baf;
-  border-radius: 4px;
-  font-size: 13px;
-  line-height: 18px;
-  color: #ffffff;
-  font-weight: bold;
-  display: flex;
-  padding: 8px 12px;
-  gap: 8px;
-  cursor: pointer;
-}
-.form-error-message {
-  color: #f44336;
-  font-weight: 500;
-}
-@media (max-width: 991.98px) {
-  .new-card {
-    color: #23cefd;
-    background: transparent;
-  }
-}
+@import "../css/components/new-card.scss";
 </style>

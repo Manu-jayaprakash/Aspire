@@ -44,37 +44,5 @@ export default {
 };
 </script>
 <style lang="scss">
-.mobile-navigation {
-  display: none;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  z-index: 1;
-  background: #ffffff;
-  height: 56px;
-  .nav-items {
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-items__link {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #dddddd;
-    padding: 9px 0px;
-    font-size: 10px;
-    line-height: 13px;
-    gap: 2px;
-    img {
-      height: 21px;
-    }
-  }
-}
-
-@media (max-width: 991.98px) {
-  .mobile-navigation {
-    display: block;
-  }
-}
+@import "../css/components/mobile-navigator.scss";
 </style>
