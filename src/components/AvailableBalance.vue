@@ -8,5 +8,5 @@
   </div>
 </template>
 <style lang="scss">
-@import "../css/components/balance.scss";
+@import "../css/components/AvailableBalance.scss";
 </style>

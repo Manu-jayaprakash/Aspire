@@ -23,6 +23,11 @@
   &__number {
     font-size: 14px;
     line-height: 19px;
+    font-weight: bold;
+  }
+  &__number-hidden {
+    font-size: 36px;
+    line-height: 19px;
   }
   &__info {
     display: flex;
@@ -44,7 +49,7 @@
     padding: 5px 10px;
     top: -26px;
     gap: 6px;
-    right: 26px;
+    right: 30px;
     cursor: pointer;
   }
 }
@@ -52,7 +57,7 @@
   .debit-card {
     &__show-number {
       position: sticky;
-      right: 33px;
+      right: 35px;
       border-radius: 6px 6px 0px 0px;
       width: 150px;
       margin-left: auto;

@@ -4,7 +4,7 @@
     <MobileNavigator />
     <el-main class="card-page__container-main">
       <div class="card-page__container-main-head">
-        <Balance />
+        <AvailableBalance />
         <NewCard />
       </div>
       <CardTabs />
@@ -15,7 +15,7 @@
 <script>
 import Navigator from "../components/Navigator";
 import MobileNavigator from "../components/MobileNavigator";
-import Balance from "../components/Balance";
+import AvailableBalance from "../components/AvailableBalance";
 import NewCard from "../components/NewCard";
 import CardTabs from "../components/CardTabs";
 export default {
@@ -23,7 +23,7 @@ export default {
   components: {
     Navigator,
     MobileNavigator,
-    Balance,
+    AvailableBalance,
     NewCard,
     CardTabs,
   },
